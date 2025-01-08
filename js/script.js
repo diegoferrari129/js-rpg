@@ -21,7 +21,7 @@ function goTown() {
     button1.onclick = goStore;
     button2.onclick = goCave;
     button3.onclick = fightDragon;
-    text.innerText = "You are in the town square. You see a sign that says Store.";
+    text.innerText = "You are in the town square. You see a sign that says \"Store\".";
 }
 
 function goStore() {
@@ -66,3 +66,10 @@ function fightDragon() {
 button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
+
+//locations
+function update(location) {
+
+}
+
+const locations = []

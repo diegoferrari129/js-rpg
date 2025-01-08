@@ -14,8 +14,17 @@ const button1 = document.querySelector("#button1")
 const button2 = document.querySelector("#button2")
 const button3 = document.querySelector("#button3")
 
+function goStore() {
+    console.log("Going to store.");
+}
+
+function goCave() {
+    console.log("Going to cave.");
+}
+
 // Monster stats
 let monsterHealth
+const monsterHealthText = document.querySelector("#monsterHealth");
 const monsterStats = document.querySelector('#monsterStats');
 const monsterName = document.querySelector('#monsterName');
 
@@ -24,3 +33,12 @@ const text = document.querySelector('#text');
 
 //fight
 let fighting
+
+function fightDragon() {
+    console.log("Fighting dragon.");
+}
+
+// initialize buttons
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;

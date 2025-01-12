@@ -19,7 +19,11 @@ function goTown() {
 }
 
 function goStore() {
+    update(locations[1])
+}
 
+function goCave() {
+    update(locations[2])
 }
 
 function buyHealth() {
@@ -28,10 +32,6 @@ function buyHealth() {
 
 function buyWeapon() {
     
-}
-
-function goCave() {
-    console.log("Going to cave.");
 }
 
 // Monster stats
@@ -48,6 +48,14 @@ let fighting
 
 function fightDragon() {
     console.log("Fighting dragon.");
+}
+
+function fightSlime() {
+    console.log("Fighting slime.");
+}
+
+function fightBeast() {
+    console.log("Fighting beast.");
 }
 
 // initialize buttons
@@ -79,4 +87,10 @@ const locations = [
         "button functions": [buyHealth, buyWeapon, goTown],
         text: "You enter the store."
     },
+    {
+        name: "cave",
+        "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
+        "button functions": [fightSlime, fightBeast, goTown],
+        text: "You enter the cave. You see some monsters."
+    }
 ]

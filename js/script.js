@@ -246,3 +246,7 @@ function restart() {
     xpText.innerText = xp;
     goTown();
 }
+
+function easterEgg(){
+    update(locations[7]);
+}
